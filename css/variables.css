@@ -1,0 +1,11 @@
+:root {
+  --font-main: "Bitcount Single Mono Light", monospace;
+  --font-headers: Arial, sans-serif;
+  
+  --color-page-bg: #f0f0f0;
+  --color-text-light: #ffffff;
+  --color-text-dark: #000000;
+  
+  --card-radius: 8px;
+  --grid-gap: 12px;
+}
