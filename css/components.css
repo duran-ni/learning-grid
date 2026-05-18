@@ -17,21 +17,21 @@
   justify-content: center;
   padding: 24px 12px;
   border-radius: var(--card-radius);
-  color: var(--color-text-light);
+  color: var(--color-text-light); /* Todas las tarjetas tendrán texto blanco por defecto */
   font-weight: 700;
   font-size: 0.9rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
-/* Modificadores de color específicos (BEM) */
+/* Modificadores de color específicos (BEM) - Corregidos según la imagen */
 .color-card--black       { background-color: black; }
 .color-card--teal        { background-color: teal; }
 .color-card--blue        { background-color: blue; }
 .color-card--navy        { background-color: navy; }
-.color-card--lime        { background-color: lime; color: var(--color-text-dark); text-shadow: none; }
-.color-card--white       { background-color: white; color: var(--color-text-dark); text-shadow: none; border: 1px solid #ddd; }
+.color-card--lime        { background-color: lime; } 
+.color-card--white       { background-color: white; color: var(--color-text-dark); text-shadow: none; border: 1px solid #ddd; } 
 .color-card--purple      { background-color: purple; }
-.color-card--yellow      { background-color: yellow; color: var(--color-text-dark); text-shadow: none; }
+.color-card--yellow      { background-color: yellow; } 
 .color-card--olive       { background-color: olive; }
 .color-card--red         { background-color: red; }
 .color-card--maroon      { background-color: maroon; }
