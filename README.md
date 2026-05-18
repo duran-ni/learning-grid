@@ -42,10 +42,6 @@ Uso de dos tipos de fuentes
 
 - Contraste de color adecuado entre el texto y el fondo de las tarjetas.
 
-# Capturas del Proyecto
-![HTML5 & CSS3](assets/imgs/.png)
-
-
 # 💻Tecnologías Utilizadas
 - HTML5: Estructura semántica de la página
 
@@ -56,5 +52,12 @@ Uso de dos tipos de fuentes
 - Google Fonts 
 
 # 📅Planificación de Commits
+- git commit -m "feat: add css variables and reset styles rules"
+- git commit -m "feat: implement container layout and titles typography"
+- git commit -m "feat: design color cards components with accessible contrast text"
+- git commit -m "feat: complete responsive css grid implementation for phone, tablet, and desktop layout"
+- git commit -m "fix: change text color to white for lime, yellow, and white cards to match design"
+
+  
 
 
