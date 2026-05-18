@@ -1,0 +1,25 @@
+/* === LAYOUT: Contenedor principal y cabecera === */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+.page-header__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--font-headers);
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.page-header__subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-headers);
+  color: var(--color-text-dark);
+}
