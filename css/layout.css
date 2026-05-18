@@ -23,3 +23,72 @@
   font-family: var(--font-headers);
   color: var(--color-text-dark);
 }
+
+/* === LAYOUT: Contenedor principal y cabecera === */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+.page-header__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--font-headers);
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.page-header__subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--font-headers);
+  color: var(--color-text-dark);
+}
+
+/* === GRID RESPONSIVE === */
+
+.color-grid {
+  display: grid;
+  /* Móvil: Rejilla base de 3 columnas */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: var(--grid-gap);
+}
+
+/* El encabezado siempre ocupa todo el ancho de la rejilla */
+.color-grid__header {
+  grid-column: 1 / -1; 
+}
+
+/* Comportamiento del bloque verde en Móvil (ocupa las 3 columnas) */
+.color-card--green {
+  grid-column: span 3;
+}
+
+/* Tablet: Transición a 4 columnas */
+@media (min-width: 600px) {
+  .color-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* En tablet, el bloque verde vuelve a ocupar una sola columna estándar */
+  .color-card--green {
+    grid-column: auto;
+  }
+}
+
+/* Desktop: Transición a 6 columnas */
+@media (min-width: 1024px) {
+  .color-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  /* En escritorio, el bloque verde se expande para ocupar 3 columnas */
+  .color-card--green {
+    grid-column: span 3;
+  }
+}
